@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<title>Add Product</title>
+	<meta charset="utf-8">
+		<style type="text/css">
+							  .border{
+								border:solid 1px;
+							  }
+							  .size{
+								height:200px;
+								width:200px
+								padding-left:2px;
+							  }
+		</style>
+</head>
+
+<body>
+
+<div class="" style="text-align:center;">
+
+    <h2>Welcome To Website</h2>
+	
+    <fieldset>
+    
+    <div style="text-align:center; border-bottom: solid black 1px; ">
+            <h4>Admin Panel</h4>
+    </div>
+	
+    <br><br>
+    
+	<div style='text-align:center; border: solid black 1px; padding:30px;margin-left:80px;margin-right:80px;'>
+
+		<div style='margin-left:400px;border: border: 1px solid black;text-align:left'>
+		
+			<form action="addproduct_action.php" method="post" enctype="multipart/form-data">
+			
+				Product Name : <input type="text" name="prod_name" value="" />
+				<br><br></br>
+				
+				City Name : <input list="OS" name="city" value="" required/>
+				<datalist id="OS">
+				<option value="Mumbai">
+				<option value="Navi Mummbai">
+				<option value="Thane">
+				<option value="Panvel">
+				<option value="(Specify)">
+				</datalist>You can edit the list.
+				<br><br></br>
+				
+				Prod type: <select class="" name="prod_type" required>
+				<option label=""></option>
+				<option>Book</option>
+				<option>Electronics</option>
+				<option>Home_Accessories</option>
+				<option>Mobiles</option>
+				<option>Sports</option>
+				<option>Other</option>
+				</select>
+				<br><br></br>
+				
+				Brand type :<select name="brand_type" required>
+				<option label=""></option>
+				<option>Adidas</option>
+				<option>Apple</option>
+				<option>Nike</option>
+				<option>Samsung</option>
+				<option>Sony</option>
+				<option>Other</option>
+				</select>
+				<br><br></br>
+				
+				Upload Image :<input type="file" name="file" value="" required/>
+				<br><br></br>
+				
+				Prod Description :<input type="text" name="prod_descr" value="" required/>
+				<br><br></br>
+				
+				Cost :<input type="number" name="cost" value="" required/>
+				<br><br></br>
+				
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" name="" value="Add Product"/>
+				
+				<span>&nbsp&nbsp</span>
+				
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="reset" name="" value="Reset All"/>
+		
+		</form>
+	
+	</div>
+
+	</div>
+
+	</div>
+
+	</fieldset>
+  
+</body>
+
+</html>
